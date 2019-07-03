@@ -30,7 +30,7 @@ def add_myname(txt, num=6):
     return None
 
 
-@itchat.msg_register('Text', isGroupChat = False)
+@itchat.msg_register('Text', isGroupChat = True)
 def text_reply(msg):
     if msg['FromUserName'] == FOX_USRNAME:
         txt = msg['Text']

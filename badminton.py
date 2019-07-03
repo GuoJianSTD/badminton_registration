@@ -54,4 +54,5 @@ if __name__ == '__main__':
     for name in names:
         if name['PYQuanPin'].startswith('fox'):
             FOX_USRNAME = name['UserName']
+            break
     itchat.run()
